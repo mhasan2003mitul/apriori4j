@@ -18,7 +18,7 @@ public class AprioriAlgorithmTest {
 
     @SuppressWarnings("unchecked")
     public static List<Transaction> getTransactions() throws IOException {
-        List<String> lines = FileUtils.readLines(new File("apriori4j/src/test/resources/dataset.csv"));
+        List<String> lines = FileUtils.readLines(new File("C:\\Users\\in738pat\\duo\\apriori4j\\apriori4j\\src\\test\\resources\\dataset.csv"));
         List<Transaction> transactions = new ArrayList<Transaction>();
         for (String line : lines) {
             Set<String> items = new HashSet<String>();
