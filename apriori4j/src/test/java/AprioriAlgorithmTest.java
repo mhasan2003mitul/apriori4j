@@ -18,7 +18,7 @@ public class AprioriAlgorithmTest {
 
     @SuppressWarnings("unchecked")
     public static List<Transaction> getTransactions() throws IOException {
-        List<String> lines = FileUtils.readLines(new File("C:\\Users\\in738pat\\duo\\apriori4j\\apriori4j\\src\\test\\resources\\dataset.csv"));
+        List<String> lines = FileUtils.readLines(new File("D:\\workspace_j2ee\\apriori4j\\apriori4j\\src\\test\\resources\\dataset.csv"));
         List<Transaction> transactions = new ArrayList<Transaction>();
         for (String line : lines) {
             Set<String> items = new HashSet<String>();
@@ -41,6 +41,9 @@ public class AprioriAlgorithmTest {
     public void verifyWithDatasetCsv1() throws Exception {
         AprioriAlgorithm apriori = new AprioriAlgorithm(0.15, 0.6);
         AnalysisResult result = apriori.analyze(getTransactions());
+        for(AssociationRule rule:result.getAssociationRules()){
+            System.out.println(rule.toString());
+        }
         assertThat(result.getAssociationRules().size(), is(equalTo(5)));
     }
 

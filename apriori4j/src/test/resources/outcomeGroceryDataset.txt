@@ -1,0 +1,19 @@
+Algorithm: D-Bound
+Dataset Name: grocery.csv
+Number of Transactions: 1420
+Number of Unique Transaction: 877
+Number of Items: 721
+D: 6
+delta: 0.1
+epsilon: 0.1
+N: 3322
+
+Algorithm: Toivonen
+Dataset Name: grocery.csv
+Number of Transactions: 1420
+Number of Unique Transaction: 877
+Number of Items: 721
+delta: 0.1
+epsilon: 0.1
+N: 150
+

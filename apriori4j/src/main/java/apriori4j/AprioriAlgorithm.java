@@ -111,7 +111,7 @@ public class AprioriAlgorithm {
         return new AnalysisResult(frequentItemSets, associationRules);
     }
 
-    private static Set<ItemSet> toOneElementItemSets(List<Transaction> transactions) {
+    public static Set<ItemSet> toOneElementItemSets(List<Transaction> transactions) {
 
         Set<ItemSet> results = new HashSet<ItemSet>();
         for (Transaction transaction : transactions) {

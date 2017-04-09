@@ -18,4 +18,23 @@ public class Transaction {
         return items.toString();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+
+        if (!(o instanceof Transaction)) return false;
+
+        Transaction that = (Transaction) o;
+
+        return new org.apache.commons.lang.builder.EqualsBuilder()
+                .append(getItems(), that.getItems())
+                .isEquals();
+    }
+
+    @Override
+    public int hashCode() {
+        return new org.apache.commons.lang.builder.HashCodeBuilder(17, 37)
+                .append(getItems())
+                .toHashCode();
+    }
 }

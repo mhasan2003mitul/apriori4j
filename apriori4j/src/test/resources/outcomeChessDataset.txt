@@ -1,0 +1,19 @@
+Algorithm: D-Bound
+Dataset Name: chess.csv
+Number of Transactions: 3196
+Number of Unique Transaction: 3196
+Number of Items: 75
+D: 37
+delta: 0.1
+epsilon: 0.1
+N: 15722
+
+Algorithm: Toivonen
+Dataset Name: chess.csv
+Number of Transactions: 3196
+Number of Unique Transaction: 3196
+Number of Items: 75
+delta: 0.1
+epsilon: 0.1
+N: 150
+

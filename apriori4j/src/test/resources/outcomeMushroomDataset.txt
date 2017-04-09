@@ -1,0 +1,19 @@
+Algorithm: D-Bound
+Dataset Name: mushroom.csv
+Number of Transactions: 2001
+Number of Unique Transaction: 2001
+Number of Items: 74
+D: 23
+delta: 0.1
+epsilon: 0.1
+N: 10122
+
+Algorithm: Toivonen
+Dataset Name: grocery.csv
+Number of Transactions: 2001
+Number of Unique Transaction: 2001
+Number of Items: 74
+delta: 0.1
+epsilon: 0.1
+N: 150
+
